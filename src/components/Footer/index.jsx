@@ -5,8 +5,8 @@ const Footer = () => {
     <FooterSection>
       <BrandId>rdp® 2022</BrandId>
       <div className="footer-icons">
-        <i class="bx bxl-instagram"></i>
-        <i class="bx bxl-discord-alt"></i>
+        <i className="bx bxl-instagram"></i>
+        <i className="bx bxl-discord-alt"></i>
       </div>
     </FooterSection>
   );

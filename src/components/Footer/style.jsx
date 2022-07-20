@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const FooterSection = styled.footer`
-  margin-top: 20vh;
+  margin-top: 15vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 4em;
+  padding: 1em 6em 2em;
   z-index: 20;
   position: relative;
   &::before {
@@ -38,7 +38,7 @@ export const FooterSection = styled.footer`
     cursor: pointer;
   }
   .footer-icons {
-    font-size: 1.9em;
+    font-size: 1.5em;
     display: flex;
     gap: 0.5em;
     transition: var(--transition);
@@ -52,4 +52,6 @@ export const FooterSection = styled.footer`
 export const BrandId = styled.p`
   color: var(--white);
   text-transform: uppercase;
+  font-family: var(--font-body);
+  font-weight: 300;
 `;

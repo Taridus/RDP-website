@@ -4,9 +4,9 @@ export default createGlobalStyle`
   :root{
     --dark-blue: #0F171D;
     --dark-red: #9b2c24;
+    --blue: #A1EEFF;
     --white: #E2E2E2;
     --white-transparent: #ddddddab;
-
     --font-heading: 'Bespoke Slab', sans-serif;
     --font-body:  'Poppins', sans-serif;
     --font-logo: 'Squada One', cursive;
@@ -29,8 +29,10 @@ export default createGlobalStyle`
     background-color: var(--dark-blue);
     color: var(--white);
     position: relative;
+    scroll-behavior: smooth;
     p{
       letter-spacing: 1px;
+      font-family: var(--font-body);
     }
   }
   
@@ -45,7 +47,7 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     opacity: .2;
   }
   

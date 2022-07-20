@@ -7,7 +7,7 @@ export const Heading = styled.header`
   padding: 3em 4em;
   width: 100%;
   z-index: 100;
-
+  position: absolute;
   .brand {
     z-index: 100;
 

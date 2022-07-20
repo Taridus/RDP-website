@@ -1,15 +1,18 @@
 import styled from "styled-components";
-import tail from "../assets/tail.png";
+import tail from "../../assets/tail.png";
 export const HomeSection = styled.section`
   position: relative;
   width: 100%;
   .hero {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     position: relative;
     padding-bottom: 10em;
+    z-index: 1;
+    overflow: hidden;
+
     &::before {
       content: "";
       position: absolute;
@@ -18,6 +21,7 @@ export const HomeSection = styled.section`
       background-color: var(--dark-blue);
       bottom: -10%;
       filter: blur(25px);
+      z-index: 1;
     }
     &-wrapper {
       display: flex;
@@ -27,7 +31,7 @@ export const HomeSection = styled.section`
       h1 {
         font-family: var(--font-logo);
         font-size: 10.391em;
-        margin: 0 auto;
+        margin: 1em auto 0;
         position: relative;
         &::before {
           content: "";
@@ -72,7 +76,6 @@ export const HomeSection = styled.section`
     }
   }
   .hero-subsection {
-    background-color: var(--dark-blue);
     height: 100vh;
     padding: 5em 4em 4em;
     display: flex;
@@ -80,6 +83,8 @@ export const HomeSection = styled.section`
     align-items: center;
     width: 100%;
     position: relative;
+    z-index: 1;
+
     &__stats {
       z-index: 2;
       width: 100%;

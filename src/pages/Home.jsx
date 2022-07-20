@@ -2,7 +2,7 @@ import React from "react";
 import bgHome from "../assets/bgHome.png";
 import overlay from "../assets/overlay.png";
 import ButtonPrimary from "../components/Buttons/ButtonPrimary";
-import { HomeSection } from "../styles/home";
+import { HomeSection } from "../styles/pages/home";
 import Footer from "../components/Footer";
 const Home = () => {
   return (
