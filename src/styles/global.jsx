@@ -24,7 +24,6 @@ export default createGlobalStyle`
   
   body{
     font-size: 15px;
-    max-width: 1440px;
     margin: 0 auto;
     background-color: var(--dark-blue);
     color: var(--white);
@@ -41,7 +40,7 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: .5;
+    opacity: .1;
   }
   .overlayBd{
     width: 100%;
@@ -50,5 +49,4 @@ export default createGlobalStyle`
     z-index: -1;
     opacity: .2;
   }
-  
 `;

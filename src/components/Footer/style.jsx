@@ -26,7 +26,7 @@ export const FooterSection = styled.footer`
     width: 40%;
     height: 100%;
     background-color: var(--dark-red);
-    filter: blur(60px);
+    filter: blur(70px) opacity(0.8);
     left: 0;
     right: 0;
     bottom: -10px;

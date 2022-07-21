@@ -21,10 +21,13 @@ export const CardContainer = styled.div`
   .diamondIcon {
     position: absolute;
     right: 0;
-    &__icon {
-      position: relative;
-      .diamond {
-        z-index: 2;
+    width: 150px;
+
+    .cardIcon {
+      z-index: 2;
+      width: 100%;
+      img {
+        max-width: 100%;
       }
     }
     &__iconred {
@@ -82,6 +85,34 @@ export const CardContainer = styled.div`
         z-index: -2;
       }
     }
+    &__iconNoBrush {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.2;
+        left: 15%;
+        top: -15%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--dark-red);
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        filter: blur(50px) opacity(0.5);
+        z-index: -2;
+      }
+      .cardIcon {
+        transform: rotate(20deg) translateY(-60px);
+      }
+    }
   }
   h3 {
     font-family: var(--font-body);
@@ -99,7 +130,7 @@ export const CardContainer = styled.div`
     background: radial-gradient(to bottom left, #d4d4d411, #11060626);
     background: -webkit-radial-gradient(top right, #d4d4d411, #11060626);
     border: 1px solid rgba(170, 170, 170, 0.089);
-    padding: 5em;
+    padding: 4em;
     display: flex;
     flex-direction: column;
     h4 {

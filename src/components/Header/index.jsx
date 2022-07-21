@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Heading } from "./styles";
-
+import rdpLogo from "../../assets/rdpLogo.png";
 const Header = () => {
   return (
     <Heading className="header">
       <Link to="/" className="brand">
-        RDP
+        <img src={rdpLogo} alt="" />
       </Link>
       <nav>
         <ul>

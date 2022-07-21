@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import tail from "../../assets/tail.png";
 export const HomeSection = styled.section`
   position: relative;
   width: 100%;
@@ -12,7 +11,6 @@ export const HomeSection = styled.section`
     padding-bottom: 10em;
     z-index: 1;
     overflow: hidden;
-
     &::before {
       content: "";
       position: absolute;
@@ -28,37 +26,17 @@ export const HomeSection = styled.section`
       flex-direction: column;
       align-items: center;
       z-index: 20;
-      h1 {
+      .logo {
         font-family: var(--font-logo);
-        font-size: 10.391em;
-        margin: 1em auto 0;
+        margin: 8em auto 0;
         position: relative;
-        &::before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 150%;
-          left: -50%;
-          top: -50%;
-          z-index: -1;
-          background-image: url(${tail});
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position-y: center;
-          opacity: 0.6;
-          filter: hue-rotate(15deg);
-        }
+        transform: translateX(-8%) translateY(50px);
+        filter: saturate(50%);
       }
       h2 {
         font-size: var(--f-size-sm);
         letter-spacing: 2px;
-        margin: 0.1em 0 2em;
         text-transform: uppercase;
-      }
-      img {
-        position: absolute;
-        top: 0;
-        left: 30%;
       }
       a {
         transform: translateY(90px);
@@ -84,7 +62,6 @@ export const HomeSection = styled.section`
     width: 100%;
     position: relative;
     z-index: 1;
-
     &__stats {
       z-index: 2;
       width: 100%;
@@ -137,7 +114,8 @@ export const HomeSection = styled.section`
     .svg {
       position: absolute;
       left: 0;
-      top: 30%;
+      top: 10%;
+      opacity: 0.5;
     }
   }
 `;

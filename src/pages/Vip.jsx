@@ -2,9 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import { VipSection } from "../styles/pages/vip";
-import premium from "../data/vips.json";
-import diamond from "../data/vips.json";
-
+import data from "../data/benefits.json";
 const Vip = () => {
   return (
     <VipSection>
@@ -21,15 +19,17 @@ const Vip = () => {
       <div className="card-container">
         <Card
           title={"Premium"}
-          benefits={premium.premium}
-          price={120}
+          benefits={data.premium}
+          price={data.prices[0].price}
           color={"red"}
+          icon={"diamondRed"}
         />
         <Card
           title={"Diamond"}
-          benefits={diamond.diamond}
-          price={120}
+          benefits={data.diamond}
+          price={data.prices[1].price}
           color={"blue"}
+          icon={"diamondBlue"}
         />
       </div>
 

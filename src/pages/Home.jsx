@@ -3,6 +3,7 @@ import bgHome from "../assets/bgHome.png";
 import overlay from "../assets/overlay.png";
 import ButtonPrimary from "../components/Buttons/ButtonPrimary";
 import { HomeSection } from "../styles/pages/home";
+import rdpLogo from "../assets/rdpLogo.png";
 import Footer from "../components/Footer";
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
           <img src={bgHome} alt="" />
         </div>
         <div className="hero-wrapper">
-          <h1>RDP</h1>
+          <img src={rdpLogo} alt="" className="logo" />
           <h2>reino da perdição</h2>
           <ButtonPrimary
             title="Descobrir"

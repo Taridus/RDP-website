@@ -1,4 +1,3 @@
-import { useState } from "react";
 import overlayBody from "./assets/overlay.png";
 import GlobalStyle from "./styles/global";
 import { Route, Routes } from "react-router-dom";

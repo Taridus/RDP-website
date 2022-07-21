@@ -4,7 +4,7 @@ export const Heading = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 4em;
+  padding: 2em 4em;
   width: 100%;
   z-index: 100;
   position: absolute;
@@ -16,7 +16,10 @@ export const Heading = styled.header`
     font-size: var(--f-size-md);
     text-decoration: none;
     transition: var(--transition);
-
+    img {
+      max-width: 80px;
+      filter: saturate(50%);
+    }
     &:hover {
       transform: scale(1.1);
       transition: var(--transition);

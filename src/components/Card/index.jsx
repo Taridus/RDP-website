@@ -2,37 +2,65 @@ import React from "react";
 import { CardContainer } from "./style";
 import redDiamond from "../../assets/redDiamond.svg";
 import blueDiamond from "../../assets/blueDiamond.svg";
-const Card = ({ title, benefits, price, color }) => {
+import skullIcon from "../../assets/skullIcon.svg";
+import handIcon from "../../assets/handIcon.svg";
+
+const Card = ({ title, benefits, price, color, icon }) => {
   const itens = benefits.map((benefit) => (
     <li key={benefit.id}>{benefit.benefit}</li>
   ));
-  let diamondColor;
-
-  const setDiamondColor = (color) => {
-    return (diamondColor = color === "red" ? redDiamond : blueDiamond);
-  };
-
+  let diamondColor, cardIcon, hasBrush;
   const setBrushColor = (color) => {
     return (diamondColor = color === "red" ? "red" : "blue");
   };
 
-  console.log(setBrushColor(color));
+  const setIcon = (icon) => {
+    switch (icon) {
+      case "diamondRed":
+        cardIcon = redDiamond;
+        hasBrush = true;
+        break;
+      case "diamondBlue":
+        cardIcon = blueDiamond;
+        hasBrush = true;
+
+        break;
+      case "skull":
+        cardIcon = skullIcon;
+        hasBrush = false;
+        break;
+      case "hand":
+        cardIcon = handIcon;
+        hasBrush = false;
+        break;
+    }
+  };
+
+  setBrushColor(color);
+  setIcon(icon);
+
   return (
     <CardContainer>
       <div className="diamondIcon">
         <div
           className={
-            setBrushColor(color) == "red"
-              ? "diamondIcon__iconred"
-              : "diamondIcon__iconblue"
+            hasBrush === true
+              ? diamondColor === "red"
+                ? "diamondIcon__iconred"
+                : "diamondIcon__iconblue"
+              : "diamondIcon__iconNoBrush"
           }
         >
-          <div className="diamond">
-            <img src={setDiamondColor(color)} alt="" />
+          <div className="cardIcon">
+            <img
+              src={cardIcon}
+              alt=""
+              className={title == "Posse" ? "card-posse" : "card"}
+            />
           </div>
         </div>
       </div>
-      <h3>{title}</h3>
+      <h3>{title == "Lord" ? "Lord da perdição" : title}</h3>
       <div className="benefits-container">
         <h4>Vantagens</h4>
         <ul>{itens}</ul>

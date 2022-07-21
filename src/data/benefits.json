@@ -1,0 +1,108 @@
+{
+  "premium": [
+    {
+      "id": 1,
+      "benefit": "Tag personalizável."
+    },
+    {
+      "id": 2,
+      "benefit": "Cargo de Vip Premium."
+    },
+    {
+      "id": 3,
+      "benefit": "Direito de mandar foto no #chat-geral."
+    },
+    {
+      "id": 4,
+      "benefit": "Sala na área \"Palácio do King\" contando hora."
+    },
+    {
+      "id": 5,
+      "benefit": "Permissão para silenciar, ensurdecer e mover manualmente."
+    }
+  ],
+  "diamond": [
+    {
+      "id": 1,
+      "benefit": "Tag personalizável."
+    },
+    {
+      "id": 2,
+      "benefit": "Cargo de Vip Premium."
+    },
+    {
+      "id": 3,
+      "benefit": "Direito de mandar foto no #chat-geral."
+    },
+    {
+      "id": 4,
+      "benefit": "Sala na área \"Palácio do IMP\" contando hora."
+    },
+    {
+      "id": 5,
+      "benefit": "Permissão para silenciar, ensurdecer e mover manualmente."
+    }
+  ],
+  "lord": [
+    {
+      "id": 1,
+      "benefit": "Perma caveirinha (com permissão de ban)."
+    },
+    {
+      "id": 2,
+      "benefit": "Call vip contando hora na categoria Lord."
+    },
+    {
+      "id": 3,
+      "benefit": "Tag Vip personalizada."
+    },
+    {
+      "id": 4,
+      "benefit": "Tag de cor personalizada."
+    },
+    {
+      "id": 5,
+      "benefit": "Direito a 1 Vip Premium por mês."
+    },
+    {
+      "id": 6,
+      "benefit": "Direito a 2 primeiras damas."
+    }
+  ],
+  "posse": [
+    {
+      "id": 1,
+      "benefit": "Permissão de ban."
+    },
+    {
+      "id": 2,
+      "benefit": "Call vip contando hora na categoria Posse."
+    },
+    {
+      "id": 3,
+      "benefit": "Tag Vip personalizada."
+    },
+    {
+      "id": 4,
+      "benefit": "Direito a 1 primeira damas."
+    }
+  ],
+  "prices": [
+    {
+      "id": "premium",
+      "price": 120
+    },
+    {
+      "id": "diamond",
+      "price": 80
+    },
+    {
+      "id": "lord",
+      "price": 1000
+    },
+    {
+      "id": "posse",
+      "price": 800
+    }
+  ]
+}
