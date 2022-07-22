@@ -25,16 +25,30 @@ export const Profile = styled.div`
     background: -webkit-radial-gradient(top right, #d4d4d411, #11060626);
     border: 1px solid rgba(170, 170, 170, 0.089);
     position: relative;
-    padding: 3em;
+    padding: 3em 6em 3em 3em;
     &__icon {
       position: absolute;
-      right: -20%;
-      top: -15%;
+      right: -40px;
+      top: -60px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--dark-red);
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        filter: blur(50px) opacity(0.8);
+        z-index: -2;
+      }
     }
     &__outsideName {
       position: absolute;
-      bottom: -28%;
-      left: 0;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      right: -80px;
+      top: 0em;
       letter-spacing: 15px;
       font-size: 5.594em;
       font-family: var(--font-body);
@@ -42,6 +56,43 @@ export const Profile = styled.div`
       font-weight: 700;
       opacity: 0.1;
       color: var(--white-transparent);
+    }
+    &__social {
+      transform: translateX(50px) translateY(30px);
+      position: relative;
+    }
+    &__social a {
+      color: var(--white-transparent);
+      font-size: 1.5em;
+      margin: 0 0.5em;
+      opacity: 0.8;
+      transition: var(--transition);
+      padding: 0;
+      &::before {
+        content: "";
+        transition: var(--transition);
+      }
+      &:hover {
+        color: var(--white);
+        opacity: 1;
+        transition: var(--transition);
+        border-radius: 50%;
+        padding: 0.1em;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: var(--dark-red);
+          left: 0;
+          top: 0;
+          border-radius: 100%;
+          filter: blur(20px) opacity(0.8);
+          z-index: -2;
+          transition: var(--transition);
+        }
+      }
     }
   }
   @media (max-width: 600px) {

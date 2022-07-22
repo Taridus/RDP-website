@@ -43,9 +43,27 @@ export const FooterSection = styled.footer`
     display: flex;
     gap: 0.5em;
     transition: var(--transition);
-    i:hover {
+    &::before {
+      content: "";
+      transition: var(--transition);
+    }
+    a:hover {
       transform: scale(1.1) translateY(-5px);
       transition: var(--transition);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--dark-red);
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        filter: blur(20px) opacity(0.8);
+        z-index: -2;
+        transition: var(--transition);
+      }
     }
   }
 `;

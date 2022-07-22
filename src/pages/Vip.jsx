@@ -16,7 +16,7 @@ const Vip = () => {
           <span>torne-se</span>
           <span>vip</span>
         </h2>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="150">
           Torne-se Vip na comunindade mais quente do discord. Apoie o servidor e
           receba privilégios exclusivos.
         </p>

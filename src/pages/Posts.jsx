@@ -16,7 +16,9 @@ const Posts = () => {
           <span>obtenha</span>
           <span>cargos</span>
         </h2>
-        <p>Obtenha os melhores cargos e sinta o que é uma vida de Lord.</p>
+        <p data-aos="fade-up" data-aos-delay="150">
+          Obtenha os melhores cargos e sinta o que é uma vida de Lord.
+        </p>
       </div>
       <div className="card-container">
         <Card

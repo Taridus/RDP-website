@@ -132,9 +132,21 @@ export const CardContainer = styled.div`
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background: #afafaf;
-    background: -moz-radial-gradient(top right, #d4d4d411, #11060626);
-    background: radial-gradient(to bottom left, #d4d4d411, #11060626);
-    background: -webkit-radial-gradient(top right, #d4d4d411, #11060626);
+    background: -moz-radial-gradient(
+      top right,
+      rgba(170, 170, 170, 0.089),
+      rgba(7, 3, 3, 0.089)
+    );
+    background: radial-gradient(
+      to bottom left,
+      rgba(170, 170, 170, 0.089),
+      rgba(7, 3, 3, 0.089)
+    );
+    background: -webkit-radial-gradient(
+      top right,
+      rgba(170, 170, 170, 0.089),
+      rgba(0, 0, 0, 0.089)
+    );
     border: 1px solid rgba(170, 170, 170, 0.089);
     padding: 4em 6em 4em 4em;
     display: flex;

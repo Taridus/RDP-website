@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import redBG from "../../assets/vipRedBG.png";
 
 export const AboutSection = styled.section`
   width: 100%;
@@ -7,6 +8,21 @@ export const AboutSection = styled.section`
   place-items: center;
   position: relative;
   overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(${redBG});
+    background-repeat: no-repeat;
+    right: 0;
+    top: -20%;
+    opacity: 0.5;
+    z-index: -1;
+    background-position-x: right;
+    background-position: left;
+    rotate: 180deg;
+  }
   .title-container {
     margin: 17em 0;
     display: grid;
@@ -25,11 +41,13 @@ export const AboutSection = styled.section`
       width: 50ch;
       text-align: center;
       line-height: 22px;
+      margin-bottom: 5em;
     }
   }
   h5 {
+    font-family: var(--font-heading);
     font-size: var(--f-size-md);
-    margin-bottom: 0.5em;
+    margin-bottom: 2em;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
@@ -37,7 +55,12 @@ export const AboutSection = styled.section`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin: 4em;
+    margin: 1em 0 7em;
+  }
+  a {
+    i {
+      transform: rotate(0) !important;
+    }
   }
   @media (max-width: 600px) {
     .profile-wrapper {

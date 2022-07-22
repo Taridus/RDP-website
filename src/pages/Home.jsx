@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import overlay from "../assets/overlay.png";
 import ButtonPrimary from "../components/Buttons/ButtonPrimary";
 import { HomeSection } from "../styles/pages/home";
 import rdpLogo from "../assets/logo.png";
@@ -20,11 +19,14 @@ const Home = () => {
           data-aos-duration="2000"
         >
           <img src={rdpLogo} alt="" className="logo" />
-          <h2>reino da perdição</h2>
+          <h2 data-aos="fade-up" data-aos-delay="150" data-aos-duration="2000">
+            reino da perdição
+          </h2>
           <ButtonPrimary
             title="Descobrir"
             icon={"-arrow-back"}
-            link={"https://google.com"}
+            link={"#find"}
+            target={"self"}
           />
         </div>
       </div>
@@ -47,7 +49,7 @@ const Home = () => {
           <span>Perca-se</span>
           <span>na comunidade</span>
         </h2>
-        <p data-aos="fade-up">
+        <p data-aos="fade-up" id="find">
           RDP é uma comunidade no Discord de diversão aberta, focada em promover
           momentos de lazer aos membros com entretenimento, interações, torneios
           de jogos e muita treta!
@@ -55,7 +57,8 @@ const Home = () => {
         <ButtonPrimary
           title={"Junte-se"}
           icon={"l-discord-alt"}
-          link={"https://youtube.com"}
+          link={"https://discord.gg/RDP"}
+          target={"blank"}
           className="btn-discord"
         />
 

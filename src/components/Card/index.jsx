@@ -61,7 +61,11 @@ const Card = ({ title, benefits, price, color, icon }) => {
         </div>
       </div>
       <h3>{title == "Lord" ? "Lord da perdição" : title}</h3>
-      <div className="benefits-container">
+      <div
+        className="benefits-container"
+        data-aos="fade-left"
+        data-aos-delay="50"
+      >
         <h4>Vantagens</h4>
         <ul>{itens}</ul>
         <span>R$ {price}</span>

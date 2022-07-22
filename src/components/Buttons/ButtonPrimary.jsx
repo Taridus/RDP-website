@@ -1,8 +1,8 @@
 import React from "react";
 import { Btn } from "./style";
-const ButtonPrimary = ({ title, icon, link }) => {
+const ButtonPrimary = ({ title, icon, link, target }) => {
   return (
-    <Btn href={`${link}`} target="_blank">
+    <Btn href={`${link}`} target={`_${target}`}>
       <span>
         {title} <i className={`bx bx${icon}`}></i>
       </span>

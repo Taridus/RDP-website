@@ -5,7 +5,7 @@ const Footer = () => {
     <FooterSection>
       <BrandId>rdp® 2022</BrandId>
       <div className="footer-icons">
-        <a href="https://google.com" target="_blank">
+        <a href="https://discord.gg/RDP" target="_blank">
           <i className="bx bxl-discord-alt"></i>
         </a>
       </div>
