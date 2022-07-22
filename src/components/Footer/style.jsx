@@ -36,6 +36,7 @@ export const FooterSection = styled.footer`
   }
   i {
     cursor: pointer;
+    color: var(--white);
   }
   .footer-icons {
     font-size: 1.5em;

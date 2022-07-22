@@ -3,9 +3,10 @@ import redBG from "../../assets/vipRedBG.png";
 import blueBG from "../../assets/vipBlueBG.png";
 
 export const VipSection = styled.section`
+  width: 100%;
   z-index: 20;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
   &::before {
@@ -33,7 +34,7 @@ export const VipSection = styled.section`
     z-index: -1;
   }
   .title-container {
-    margin: 15em 0;
+    margin: 17em 0;
     display: grid;
     place-items: center;
     h2 {
@@ -58,5 +59,20 @@ export const VipSection = styled.section`
     gap: 10em;
     position: relative;
     margin-bottom: 2em;
+  }
+  @media (max-width: 550px) {
+    &::after,
+    &::before {
+      background-size: 30%;
+    }
+    &::before {
+      top: 20%;
+    }
+    &::after {
+      bottom: -5%;
+    }
+    p {
+      max-width: 30ch;
+    }
   }
 `;

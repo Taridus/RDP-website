@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import bgHome from "../../assets/bgHome.png";
+import bgHomeMobile from "../../assets/bgHomeMobile.png";
+
 export const HomeSection = styled.section`
   position: relative;
   width: 100%;
+  margin: 0 auto;
   .hero {
     width: 100%;
     height: 100vh;
@@ -21,18 +25,30 @@ export const HomeSection = styled.section`
       filter: blur(25px);
       z-index: 1;
     }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(${bgHome});
+      background-size: cover;
+      opacity: 0.5;
+    }
     &-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
       z-index: 20;
+
       .logo {
         font-family: var(--font-logo);
         margin: 8em auto 0;
         position: relative;
         transform: translateX(-8%) translateY(50px);
         filter: saturate(50%);
+        width: 70vh;
       }
+
       h2 {
         font-size: var(--f-size-sm);
         letter-spacing: 2px;
@@ -49,6 +65,8 @@ export const HomeSection = styled.section`
     top: -20vh;
     z-index: -2;
     opacity: 0.7;
+    min-height: 100vh;
+    height: 100vh;
     img {
       max-width: 100%;
     }
@@ -116,6 +134,44 @@ export const HomeSection = styled.section`
       left: 0;
       top: 10%;
       opacity: 0.5;
+    }
+  }
+  @media (max-width: 500px) {
+    .hero::after {
+      overflow: hidden;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(${bgHomeMobile});
+      background-size: cover;
+      opacity: 0.5;
+    }
+    .hero-wrapper {
+      margin-top: 4em;
+    }
+    .logo {
+      max-width: 50vh;
+      transform: translateY(-10px) translateX(-20px) !important;
+    }
+    .hero-subsection__stats {
+      flex-direction: column;
+      gap: 1em;
+    }
+    .hero-subsection {
+      margin-bottom: 25em;
+      h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        max-width: 40ch;
+      }
+      svg {
+        width: 70%;
+      }
     }
   }
 `;

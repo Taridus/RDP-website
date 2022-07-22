@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../components/Card";
 import { PostsSection } from "../styles/pages/posts";
-import data from "../data/benefits.json";
+import data from "../../data.json";
 import Footer from "../components/Footer";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Posts = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <PostsSection>
-      <div className="title-container">
+      <div className="title-container" data-aos="fade-up">
         <h2>
           <span>obtenha</span>
           <span>cargos</span>
         </h2>
-        <p>
-          Obtenha os cargos mais quentes do reino, ajude a comunidade e ganhe
-          contúdos exclusivos.
-        </p>
+        <p>Obtenha os melhores cargos e sinta o que é uma vida de Lord.</p>
       </div>
       <div className="card-container">
         <Card

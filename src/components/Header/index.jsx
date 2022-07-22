@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Heading } from "./styles";
-import rdpLogo from "../../assets/rdpLogo.png";
+import rdpLogo from "../../assets/logo.png";
 const Header = () => {
   return (
     <Heading className="header">

@@ -1,9 +1,12 @@
 import styled from "styled-components";
-import redBrush from "../../assets/kindpng_99339.png";
+import redBrush from "../../assets/redBrush.png";
 import blueBrush from "../../assets/blueBrush.png";
 
 export const CardContainer = styled.div`
   position: relative;
+  max-width: 50%;
+  margin: 0 auto;
+
   .titleBG {
     position: absolute;
     writing-mode: vertical-rl;
@@ -22,9 +25,8 @@ export const CardContainer = styled.div`
     position: absolute;
     right: 0;
     width: 150px;
-
+    z-index: 30;
     .cardIcon {
-      z-index: 2;
       width: 100%;
       img {
         max-width: 100%;
@@ -59,6 +61,7 @@ export const CardContainer = styled.div`
     }
     &__iconblue {
       position: relative;
+      z-index: 30;
       &::before {
         content: "";
         position: absolute;
@@ -109,8 +112,11 @@ export const CardContainer = styled.div`
         filter: blur(50px) opacity(0.5);
         z-index: -2;
       }
+      .card {
+        transform: rotate(20deg) translateX(30px);
+      }
       .cardIcon {
-        transform: rotate(20deg) translateY(-60px);
+        transform: rotate(0deg) translateY(-60px);
       }
     }
   }
@@ -130,14 +136,13 @@ export const CardContainer = styled.div`
     background: radial-gradient(to bottom left, #d4d4d411, #11060626);
     background: -webkit-radial-gradient(top right, #d4d4d411, #11060626);
     border: 1px solid rgba(170, 170, 170, 0.089);
-    padding: 4em;
+    padding: 4em 6em 4em 4em;
     display: flex;
     flex-direction: column;
     h4 {
       text-transform: uppercase;
       font-family: var(--font-body);
       font-size: var(--f-size-sm);
-      letter-spacing: 5px;
     }
     li {
       list-style: disc;
@@ -153,6 +158,25 @@ export const CardContainer = styled.div`
       font-weight: 500;
       align-self: flex-end;
       margin-top: 3em;
+    }
+  }
+  @media (max-width: 550px) {
+    max-width: 100%;
+    .titleBG {
+      right: -22%;
+      top: 15%;
+    }
+    .diamondIcon {
+      width: 100px;
+    }
+    h3 {
+      max-width: 15ch;
+    }
+    .benefits-container {
+      padding: 1.5em;
+      li {
+        width: 30ch;
+      }
     }
   }
 `;

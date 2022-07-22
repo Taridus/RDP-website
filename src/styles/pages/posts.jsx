@@ -5,8 +5,8 @@ import bgRed2 from "../../assets/postRedBg2.png";
 export const PostsSection = styled.section`
   width: 100%;
   z-index: 20;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
   &::before {
@@ -36,7 +36,7 @@ export const PostsSection = styled.section`
     z-index: -1;
   }
   .title-container {
-    margin: 15em 0;
+    margin: 17em 0;
     display: grid;
     place-items: center;
     h2 {
@@ -63,6 +63,24 @@ export const PostsSection = styled.section`
     margin-bottom: 2em;
     .card-posse {
       transform: translateY(50px) rotate(-20deg);
+    }
+  }
+  @media (max-width: 550px) {
+    .title-container {
+      h2 {
+        text-align: center;
+        span:nth-child(2) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &::after,
+    &::before {
+      background-size: 30%;
+    }
+    p {
+      max-width: 30ch;
     }
   }
 `;

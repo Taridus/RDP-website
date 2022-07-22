@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import { VipSection } from "../styles/pages/vip";
-import data from "../data/benefits.json";
+import data from "../../data.json";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Vip = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <VipSection>
-      <div className="title-container">
+      <div className="title-container" data-aos="fade-up">
         <h2>
           <span>torne-se</span>
           <span>vip</span>
@@ -16,6 +21,7 @@ const Vip = () => {
           receba privilégios exclusivos.
         </p>
       </div>
+
       <div className="card-container">
         <Card
           title={"Premium"}

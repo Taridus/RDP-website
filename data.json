@@ -104,5 +104,19 @@
       "id": "posse",
       "price": 800
     }
+  ],
+  "homeInfo": [
+    {
+      "id": 1,
+      "membros": "423.232"
+    },
+    {
+      "id": 2,
+      "donos": "2"
+    },
+    {
+      "id": 3,
+      "mensagens": "5.423.234"
+    }
   ]
 }

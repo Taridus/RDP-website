@@ -8,7 +8,7 @@ export const AboutSection = styled.section`
   position: relative;
   overflow: hidden;
   .title-container {
-    margin: 15em 0;
+    margin: 17em 0;
     display: grid;
     place-items: center;
     h2 {
@@ -25,6 +25,26 @@ export const AboutSection = styled.section`
       width: 50ch;
       text-align: center;
       line-height: 22px;
+    }
+  }
+  h5 {
+    font-size: var(--f-size-md);
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .profile-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4em;
+  }
+  @media (max-width: 600px) {
+    .profile-wrapper {
+      width: 70%;
+      gap: 9em;
+      flex-direction: column;
+      align-items: center;
     }
   }
 `;

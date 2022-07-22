@@ -2,8 +2,8 @@ import React from "react";
 import { CardContainer } from "./style";
 import redDiamond from "../../assets/redDiamond.svg";
 import blueDiamond from "../../assets/blueDiamond.svg";
-import skullIcon from "../../assets/skullIcon.svg";
-import handIcon from "../../assets/handIcon.svg";
+import skullIcon from "../../assets/skullIcon.png";
+import handIcon from "../../assets/handIcon.png";
 
 const Card = ({ title, benefits, price, color, icon }) => {
   const itens = benefits.map((benefit) => (
@@ -40,7 +40,7 @@ const Card = ({ title, benefits, price, color, icon }) => {
   setIcon(icon);
 
   return (
-    <CardContainer>
+    <CardContainer data-aos="fade-left">
       <div className="diamondIcon">
         <div
           className={

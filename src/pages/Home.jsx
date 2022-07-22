@@ -1,19 +1,24 @@
-import React from "react";
-import bgHome from "../assets/bgHome.png";
+import React, { useEffect } from "react";
 import overlay from "../assets/overlay.png";
 import ButtonPrimary from "../components/Buttons/ButtonPrimary";
 import { HomeSection } from "../styles/pages/home";
-import rdpLogo from "../assets/rdpLogo.png";
+import rdpLogo from "../assets/logo.png";
 import Footer from "../components/Footer";
+import data from "../../data.json";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <HomeSection>
       <div className="hero">
-        <img src={overlay} alt="" className="overlay" />
-        <div className="bg-container">
-          <img src={bgHome} alt="" />
-        </div>
-        <div className="hero-wrapper">
+        <div
+          className="hero-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <img src={rdpLogo} alt="" className="logo" />
           <h2>reino da perdição</h2>
           <ButtonPrimary
@@ -25,24 +30,24 @@ const Home = () => {
       </div>
       <div className="hero-subsection">
         <div className="hero-subsection__stats">
-          <div className="stats-box">
-            <h5>399.999</h5>
+          <div className="stats-box" data-aos="fade-left">
+            <h5>{data.homeInfo[0].membros}</h5>
             <span>Membros</span>
           </div>
-          <div className="stats-box">
-            <h5>399</h5>
+          <div className="stats-box" data-aos="fade-up">
+            <h5>{data.homeInfo[1].donos}</h5>
             <span>Donos</span>
           </div>
-          <div className="stats-box">
-            <h5>5.399.999</h5>
+          <div className="stats-box" data-aos="fade-right">
+            <h5>{data.homeInfo[2].mensagens}</h5>
             <span>Mensagens</span>
           </div>
         </div>
-        <h2>
+        <h2 data-aos="fade-up">
           <span>Perca-se</span>
           <span>na comunidade</span>
         </h2>
-        <p>
+        <p data-aos="fade-up">
           RDP é uma comunidade no Discord de diversão aberta, focada em promover
           momentos de lazer aos membros com entretenimento, interações, torneios
           de jogos e muita treta!
