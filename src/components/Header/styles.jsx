@@ -8,10 +8,7 @@ export const Heading = styled.header`
   width: 100%;
   z-index: 100;
   position: absolute;
-  @media (max-width: 550px) {
-    flex-direction: column;
-    gap: 2em;
-  }
+
   .brand {
     z-index: 100;
 
@@ -29,13 +26,19 @@ export const Heading = styled.header`
       transition: var(--transition);
     }
   }
+  @media (max-width: 550px) {
+    flex-direction: column;
+    gap: 2em;
+    .brand {
+      display: none;
+    }
+  }
   nav ul {
     display: flex;
     gap: 4em;
     overflow: hidden;
     z-index: 100;
     @media (max-width: 550px) {
-      display: flex;
       gap: 4em;
     }
     li {

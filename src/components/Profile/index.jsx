@@ -34,7 +34,7 @@ const ProfileCard = ({ name }) => {
             href="https://www.instagram.com/kingninja_oficial/"
             target="_blank"
           >
-            <i class="bx bxl-instagram-alt"></i>
+            <i className="bx bxl-instagram-alt"></i>
           </a>
           <a
             href={`https://discord.com/users/${

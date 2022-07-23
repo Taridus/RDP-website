@@ -62,6 +62,21 @@ export const AboutSection = styled.section`
       transform: rotate(0) !important;
     }
   }
+  @media (max-width: 550px) {
+    &::after,
+    &::before {
+      background-size: 30%;
+    }
+    &::before {
+      top: 20%;
+    }
+    &::after {
+      bottom: -5%;
+    }
+    p {
+      max-width: 30ch;
+    }
+  }
   @media (max-width: 600px) {
     .profile-wrapper {
       width: 70%;
