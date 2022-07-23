@@ -118,5 +118,15 @@
       "id": 3,
       "mensagens": "5.423.234"
     }
+  ],
+  "instagram": [
+    {
+      "id": "king",
+      "link": "https://www.instagram.com/kingninja_oficial/"
+    },
+    {
+      "id": "imp",
+      "link": "https://www.instagram.com/"
+    }
   ]
 }

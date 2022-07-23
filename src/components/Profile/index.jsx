@@ -4,7 +4,7 @@ import iconKing from "../../assets/kingIcon.png";
 import iconImp from "../../assets/impIcon.png";
 import avatarImp from "../../assets/impAvatar.png";
 import avatarKing from "../../assets/kingAvatar.png";
-
+import data from "../../../data.json";
 const ProfileCard = ({ name }) => {
   const discordId = {
     imp: {
@@ -31,7 +31,9 @@ const ProfileCard = ({ name }) => {
         />
         <div className="profile-container__social">
           <a
-            href="https://www.instagram.com/kingninja_oficial/"
+            href={
+              name == "king" ? data.instagram[0].link : data.instagram[1].link
+            }
             target="_blank"
           >
             <i className="bx bxl-instagram-alt"></i>
