@@ -4,11 +4,16 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/reset.css";
 import "./styles/normalize.css";
+import getData from "./api";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+getData();
+setTimeout(() => {
+  ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <App />
   </BrowserRouter>
 );
+}, 3000);
+
 
 console.log("Builded by @rafaelGleal");

@@ -8,7 +8,7 @@ export default createGlobalStyle`
     --blue: #A1EEFF;
     --white: #E2E2E2;
     --white-transparent: #ddddddab;
-    --font-heading: 'Bespoke Slab', sans-serif;
+    --font-heading: 'Cinzel', serif;
     --font-body:  'Poppins', sans-serif;
     --font-logo: 'Squada One', cursive;
     --f-size-sm: 1.5em;
@@ -41,6 +41,7 @@ export default createGlobalStyle`
     p{
       letter-spacing: 1px;
       font-family: var(--font-body);
+      font-weight: 200;
     }
   }
   

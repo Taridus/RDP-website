@@ -7,22 +7,11 @@ import data from "../../data.json";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const Home = () => {
-  const [dataApi, setData] = useState(null);
-  let membersCount = data.homeInfo[1].donos;
-  let membersPresence = data.homeInfo[1].donos;
-
-  useEffect(() => {
+  const membersCount = window.localStorage.getItem('memberCount');
+  const membersOnline = window.localStorage.getItem('memberOnline');
+  useEffect(()=>{
     Aos.init({ duration: 1500 });
-    fetch(
-      "https://discord.com/api/v9/invites/rdp?with_counts=true&with_expiration=true"
-    )
-      .then((response) => response.json())
-      .then(setData);
-  }, []);
-  if (dataApi) {
-    membersCount = dataApi.approximate_member_count;
-    membersPresence = dataApi.approximate_presence_count;
-  }
+  })
   return (
     <HomeSection>
       <div className="hero">
@@ -46,7 +35,9 @@ const Home = () => {
       <div className="hero-subsection">
         <div className="hero-subsection__stats">
           <div className="stats-box" data-aos="fade-left">
-            <h5>{membersCount}</h5>
+            <h5>{
+              membersCount
+            }</h5>
             <span>Membros</span>
           </div>
           <div className="stats-box" data-aos="fade-up">
@@ -54,7 +45,9 @@ const Home = () => {
             <span>Donos</span>
           </div>
           <div className="stats-box" data-aos="fade-right">
-            <h5>{membersPresence}</h5>
+            <h5>{
+              membersOnline
+            }</h5>
             <span>Online</span>
           </div>
         </div>

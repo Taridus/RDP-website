@@ -1,8 +1,7 @@
-import GlobalStyle from "./styles/global";
 import { Route, Routes } from "react-router-dom";
-
-import Header from "./components/Header";
 import React, { Suspense } from "react";
+import GlobalStyle from "./styles/global";
+import Header from "./components/Header";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Posts = React.lazy(() => import("./pages/Posts"));

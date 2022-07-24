@@ -53,6 +53,7 @@ export const HomeSection = styled.section`
         font-size: var(--f-size-sm);
         letter-spacing: 2px;
         text-transform: uppercase;
+        font-family: var(--font-heading)
       }
       a {
         transform: translateY(90px);
