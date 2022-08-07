@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import bgRed from "../../assets/postRedBg.png";
 import bgRed2 from "../../assets/postRedBg2.png";
-
 export const PostsSection = styled.section`
   width: 100%;
   z-index: 20;
@@ -36,7 +35,7 @@ export const PostsSection = styled.section`
     z-index: -1;
   }
   .title-container {
-    margin: 17em 0;
+    margin: 10em 0;
     display: grid;
     place-items: center;
     h2 {

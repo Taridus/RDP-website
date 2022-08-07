@@ -34,7 +34,7 @@ export const VipSection = styled.section`
     z-index: -1;
   }
   .title-container {
-    margin: 17em 0;
+    margin: 10em 0;
     display: grid;
     place-items: center;
     h2 {

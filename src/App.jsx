@@ -7,6 +7,7 @@ const Home = React.lazy(() => import("./pages/Home"));
 const Posts = React.lazy(() => import("./pages/Posts"));
 const Vip = React.lazy(() => import("./pages/Vip"));
 const About = React.lazy(() => import("./pages/About"));
+const Fivem = React.lazy(() => import("./pages/Fivem"));
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/vip" element={<Vip />} />
           <Route path="/posts" element={<Posts />} />
+          <Route path="/fivem" element={<Fivem />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Suspense>

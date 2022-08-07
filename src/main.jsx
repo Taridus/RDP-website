@@ -7,7 +7,7 @@ import "./styles/normalize.css";
 import getData from "./api";
 getData();
 setTimeout(() => {
-  const loader = document.querySelector(".loader").classList.add("disabled");
+  document.querySelector(".loader").classList.add("disabled");
 
   ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>

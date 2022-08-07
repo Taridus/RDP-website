@@ -26,6 +26,8 @@ export const CardContainer = styled.div`
     right: 0;
     width: 150px;
     z-index: 30;
+    animation: cardIcon 4s linear infinite;
+
     .cardIcon {
       width: 100%;
       img {
@@ -150,6 +152,7 @@ export const CardContainer = styled.div`
     border: 1px solid rgba(170, 170, 170, 0.089);
     padding: 4em 6em 4em 4em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     h4 {
       text-transform: uppercase;
@@ -163,7 +166,8 @@ export const CardContainer = styled.div`
       font-style: italic;
       letter-spacing: 1px;
       margin: 2.5em 1em 0em 2em;
-      width: 43ch;
+      max-width: 43ch;
+      min-width: 30ch;
     }
     span {
       font-family: var(--font-body);
@@ -177,6 +181,7 @@ export const CardContainer = styled.div`
     .titleBG {
       right: -22%;
       top: 15%;
+      letter-spacing: 5px;
     }
     .diamondIcon {
       width: 100px;
@@ -189,6 +194,15 @@ export const CardContainer = styled.div`
       li {
         width: 30ch;
       }
+    }
+  }
+  @media (min-width: 550px) and (max-width: 840px) {
+    .titleBG {
+      opacity: 0;
+    }
+    .benefits-container {
+      padding: 1em;
+      min-width: 400px;
     }
   }
 `;

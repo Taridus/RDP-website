@@ -9,19 +9,17 @@ export const HomeSection = styled.section`
   .hero {
     width: 100%;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     position: relative;
-    padding-bottom: 10em;
     z-index: 1;
-    overflow: hidden;
     &::before {
       content: "";
       position: absolute;
       width: 100%;
       height: 15%;
       background-color: var(--dark-blue);
-      bottom: -10%;
+      bottom: 10%;
       filter: blur(25px);
       z-index: 1;
     }
@@ -33,6 +31,7 @@ export const HomeSection = styled.section`
       background-image: url(${bgHome});
       background-size: cover;
       opacity: 0.5;
+      top: -20%;
     }
     &-wrapper {
       display: flex;
@@ -42,7 +41,7 @@ export const HomeSection = styled.section`
 
       .logo {
         font-family: var(--font-logo);
-        margin: 8em auto 0;
+        margin: 1em auto 0;
         position: relative;
         transform: translateX(-8%) translateY(50px);
         filter: saturate(50%);
@@ -53,7 +52,7 @@ export const HomeSection = styled.section`
         font-size: var(--f-size-sm);
         letter-spacing: 2px;
         text-transform: uppercase;
-        font-family: var(--font-heading)
+        font-family: var(--font-heading);
       }
       a {
         transform: translateY(90px);
@@ -74,7 +73,7 @@ export const HomeSection = styled.section`
   }
   .hero-subsection {
     height: 100vh;
-    padding: 5em 4em 4em;
+    padding: 0em 4em 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +109,7 @@ export const HomeSection = styled.section`
       font-family: var(--font-heading);
       font-size: var(--f-size-lg);
       text-transform: uppercase;
-      margin: 3em 0 1em;
+      margin: 3em auto 1em;
       z-index: 2;
       span:nth-child(1) {
         color: var(--dark-red);
@@ -166,6 +165,7 @@ export const HomeSection = styled.section`
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 0 auto;
       }
       p {
         max-width: 40ch;
@@ -173,6 +173,14 @@ export const HomeSection = styled.section`
       svg {
         width: 70%;
       }
+    }
+  }
+  @media (min-width: 550px) {
+    .hero-subsection h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
   }
 `;

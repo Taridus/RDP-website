@@ -25,6 +25,7 @@ export default createGlobalStyle`
   
   body{
     font-size: 15px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: var(--dark-blue);
     color: var(--white);
@@ -72,5 +73,22 @@ export default createGlobalStyle`
       p {
         max-width: 40ch;
       } 
+  }
+  @keyframes cardIcon {
+    0% {
+      transform: translateX(-2px);
+    }
+    25% {
+      transform: translateX(2px);
+    }
+    50% {
+      transform: translateY(-2px) rotate(1deg);
+    }
+    75% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-2px);
+    }
   }
 `;

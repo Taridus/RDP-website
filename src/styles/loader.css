@@ -21,6 +21,8 @@
   transform: translateX(-200%);
   visibility: hidden;
   transition: 2s cubic-bezier(0.365, 0.183, 0.153, 0.846);
+  opacity: 0;
+  filter: blur(100px);
 }
 
 .gooey {

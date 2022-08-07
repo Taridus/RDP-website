@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import redBG from "../../assets/vipRedBG.png";
-
-export const AboutSection = styled.section`
+import angelFivem from "../../assets/angeFivem.png";
+export const FivemSection = styled.section`
   width: 100%;
   z-index: 20;
   display: grid;
@@ -13,15 +12,15 @@ export const AboutSection = styled.section`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(${redBG});
     background-repeat: no-repeat;
     right: 0;
-    top: -20%;
-    opacity: 0.5;
+    top: 10%;
+    opacity: 0.8;
     z-index: -1;
+    background-image: url(${angelFivem});
     background-position-x: right;
     background-position: left;
-    rotate: 180deg;
+    animation: cardIcon 8s linear infinite;
   }
   .title-container {
     margin: 10em 0;
@@ -41,7 +40,7 @@ export const AboutSection = styled.section`
       width: 50ch;
       text-align: center;
       line-height: 22px;
-      margin-bottom: 5em;
+      margin-bottom: 3em;
     }
   }
   h5 {
@@ -50,12 +49,23 @@ export const AboutSection = styled.section`
     margin-bottom: 2em;
     text-transform: uppercase;
     letter-spacing: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   .profile-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin: 1em 0 7em;
+  }
+
+  .cityBg {
+    bottom: 0.8em;
+    position: absolute;
+  }
+  footer {
+    margin-top: 18em;
   }
   a {
     i {
@@ -65,16 +75,22 @@ export const AboutSection = styled.section`
   @media (max-width: 550px) {
     &::after,
     &::before {
-      background-size: 30%;
+      background-size: 100%;
     }
     &::before {
-      top: 20%;
+      top: 50%;
     }
     &::after {
       bottom: -5%;
     }
     p {
       max-width: 30ch;
+    }
+  }
+  @media (max-width: 890px) {
+    &::before {
+      top: 0;
+      background-size: 40%;
     }
   }
   @media (max-width: 600px) {
