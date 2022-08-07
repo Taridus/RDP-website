@@ -34,7 +34,7 @@ const Fivem = () => {
         target={"blank"}
         className="btn-discord"
       />
-      <img src="/src/assets/cityFivem.png" alt="" className="cityBg" />
+      <div className="cityBg"></div>
       <FooterSection>
         <div className="footer-icons"></div>
       </FooterSection>

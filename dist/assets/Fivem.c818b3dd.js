@@ -1,7 +1,4 @@
-import styled from "styled-components";
-import angelFivem from "../../assets/angeFivem.png";
-import cityBg from "../../assets/cityFivem.png";
-export const FivemSection = styled.section`
+import{s as t,r as i,j as a,a as e}from"./index.b5c0d53f.js";import{F as r}from"./aos.7a90f289.js";import{B as o}from"./ButtonPrimary.aca423b8.js";import{A as n}from"./aos.2481e139.js";const s="/assets/angeFivem.d62a3841.png",d="/assets/cityFivem.c14a3a19.png",m=t.section`
   width: 100%;
   z-index: 20;
   display: grid;
@@ -18,7 +15,7 @@ export const FivemSection = styled.section`
     top: 10%;
     opacity: 0.8;
     z-index: -1;
-    background-image: url(${angelFivem});
+    background-image: url(${s});
     background-position-x: right;
     background-position: left;
     animation: cardIcon 8s linear infinite;
@@ -65,7 +62,7 @@ export const FivemSection = styled.section`
     bottom: 0.8em;
     position: absolute;
     z-index: 200;
-    background-image: url(${cityBg});
+    background-image: url(${d});
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -108,4 +105,4 @@ export const FivemSection = styled.section`
       align-items: center;
     }
   }
-`;
+`,f=()=>(i.exports.useEffect(()=>{n.init({duration:1500})},[]),a(m,{children:[a("div",{className:"title-container","data-aos":"fade-up",children:[a("h2",{children:[e("span",{children:"Arme-se no"}),e("span",{children:"Fivem"})]}),e("p",{"data-aos":"fade-up","data-aos-delay":"150",children:"Agora as brincadeiras ficaram mais imersivas. Temos uma cidade no GTA RP pronta pra novas aventuras. Entre agora mesmo no nosso servidor e desfrute de mais um lugar para a Perdi\xE7\xE3o."})]}),a("h5",{"data-aos":"fade-up",children:[e("span",{children:"rdp city"}),e("span",{children:"dispon\xEDvel agora"})]}),e(o,{title:"Acessar",icon:"l-discord-alt",link:"https://discord.gg/RDP",target:"blank",className:"btn-discord"}),e("div",{className:"cityBg"}),e(r,{children:e("div",{className:"footer-icons"})})]}));export{f as default};
