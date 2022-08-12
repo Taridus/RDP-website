@@ -64,7 +64,7 @@ export const FivemSection = styled.section`
   .cityBg {
     bottom: 0.8em;
     position: absolute;
-    z-index: 200;
+    z-index: -1 !important;
     background-image: url(${cityBg});
     width: 100%;
     height: 100%;

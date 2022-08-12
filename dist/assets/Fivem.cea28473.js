@@ -1,4 +1,4 @@
-import{s as t,r as i,j as a,a as e}from"./index.b5c0d53f.js";import{F as r}from"./aos.7a90f289.js";import{B as o}from"./ButtonPrimary.aca423b8.js";import{A as n}from"./aos.2481e139.js";const s="/assets/angeFivem.d62a3841.png",d="/assets/cityFivem.c14a3a19.png",m=t.section`
+import{s as t,r as i,j as a,a as e}from"./index.20bd4990.js";import{F as r}from"./aos.b1360125.js";import{B as o}from"./ButtonPrimary.6942d335.js";import{A as n}from"./aos.02e6579c.js";const s="/assets/angeFivem.d62a3841.png",d="/assets/cityFivem.c14a3a19.png",m=t.section`
   width: 100%;
   z-index: 20;
   display: grid;
@@ -61,7 +61,7 @@ import{s as t,r as i,j as a,a as e}from"./index.b5c0d53f.js";import{F as r}from"
   .cityBg {
     bottom: 0.8em;
     position: absolute;
-    z-index: 200;
+    z-index: -1 !important;
     background-image: url(${d});
     width: 100%;
     height: 100%;

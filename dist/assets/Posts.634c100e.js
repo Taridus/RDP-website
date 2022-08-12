@@ -1,4 +1,4 @@
-import{s as i,j as t,a as e}from"./index.b5c0d53f.js";import{C as a}from"./index.b3633339.js";import{d as o,F as r}from"./data.26817630.js";import"./aos.7a90f289.js";const n="/assets/postRedBg.b0c6b765.png",s="/assets/postRedBg2.9b932ca4.png",d=i.section`
+import{s as i,j as t,a as e}from"./index.20bd4990.js";import{C as a}from"./index.59cbee03.js";import{d as o,F as r}from"./data.1da1f0fe.js";import"./aos.b1360125.js";const n="/assets/postRedBg.b0c6b765.png",s="/assets/postRedBg2.9b932ca4.png",d=i.section`
   width: 100%;
   z-index: 20;
   display: flex;

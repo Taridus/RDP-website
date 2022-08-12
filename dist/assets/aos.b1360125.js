@@ -1,4 +1,4 @@
-import{s as t}from"./index.b5c0d53f.js";const r=t.footer`
+import{s as t}from"./index.20bd4990.js";const r=t.footer`
   margin-top: 15vh;
   width: 100%;
   display: flex;
